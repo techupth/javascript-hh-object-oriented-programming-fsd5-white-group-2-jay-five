@@ -13,7 +13,7 @@ class postList {
   }
 
   addPost() {
-    this.post.push();
+    return this.post.push();
   }
 
   sharePost() {
@@ -30,7 +30,7 @@ class Post {
   }
 
   addComment() {
-    this.comment.push();
+    return this.comment.push();
   }
 }
 
@@ -43,7 +43,7 @@ class Comment {
   }
 
   addLike() {
-    this.like += 1;
+    return (this.like += 1);
   }
 }
 
@@ -53,11 +53,11 @@ class Facebook {
     this.pageList = pageList;
   }
   addGroup() {
-    this.groupList.push();
+    return this.groupList.push();
   }
 
   addPage() {
-    this.pageList.push();
+    return this.pageList.push();
   }
 }
 
